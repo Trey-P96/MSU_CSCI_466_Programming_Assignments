@@ -1,14 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1dbadc55-9e1c-424b-b4f3-a226410b3bf9" name="Changes" comment="" />
+    <list default="true" id="1dbadc55-9e1c-424b-b4f3-a226410b3bf9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/network_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MSU_CSCI_466_Programming_Assignments.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MSU_CSCI_466_Programming_Assignments.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/link.py" beforeDir="false" afterPath="$PROJECT_DIR$/link_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rprint.py" beforeDir="false" afterPath="$PROJECT_DIR$/rprint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation_1.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../MSU_CSCI_466_Programming_Assignments\exportToHTML" />
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="22287JiLWx4uFWmFzdppyw9fStR" />
   <component name="ProjectViewState">
@@ -19,7 +43,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/anaconda3/Lib/site-packages/pandas" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Documents\Networks466\MSU_CSCI_466_Programming_Assignments" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -29,7 +59,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639024154017</updated>
-      <workItem from="1639024156526" duration="434000" />
+      <workItem from="1639024156526" duration="7981000" />
+      <workItem from="1639068154438" duration="1433000" />
+      <workItem from="1639074864800" duration="144000" />
+      <workItem from="1639075031203" duration="3138000" />
+      <workItem from="1639265161708" duration="3753000" />
+      <workItem from="1639337647680" duration="1229000" />
+      <workItem from="1639338975529" duration="108000" />
+      <workItem from="1639415872007" duration="16959000" />
     </task>
     <servers />
   </component>
@@ -46,5 +83,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
