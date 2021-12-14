@@ -216,7 +216,7 @@ class Router:
     def process(self, i, val, m_fr):
         frwd = val.items()
         decap = self.decap_tbl_D.items()
-        for out_inf, next_node_in_inf in frwd:
+        for out, nextNode in frwd:
             for key, value in decap:
                 if self.name == 'RB':
                     if key is self.name and value is i:
@@ -224,23 +224,24 @@ class Router:
                         mplsFr = MPLSFrame(pkt_s)
                         mpls_frame_s = mplsFr.from_byte_S(pkt_s)
                         if ord(pkt_s[0]) == 77:  # MPLS PACKET
+                            # Ended up using ord since I was having issues with python for some reason
+                            # matching / comparing char 'M'
                             pkt_s = mpls_frame_s
                             mplsFr = MPLSFrame(mpls_frame_s)
+                            print("Last router before dest -> DECAPSULATING: ", mplsFr)
                             mpls_frame_s = mplsFr.from_byte_S(pkt_s)
+                            # CONVERTING MPLS TO NETWORK PACKET
+                            # SINCE WE'VE REACHED LAST ROUTER BEFORE DESTINATION
                             print('\nNODE %s : RECEIVED: %s\n\nNODE %s : MPLS Frame: %s\n\nNODE %s : Packet: %s\n'
                                   % (self.name, pkt_s, self.name, pkt_s, self.name, mpls_frame_s))
                             p = NetworkPacket.from_byte_S(mpls_frame_s)
                             fr = LinkFrame('Network', p.to_byte_S())
-                            self.intf_L[out_inf].put(fr.to_byte_S(), 'out', True)
+                            self.intf_L[out].put(fr.to_byte_S(), 'out', True)
                             print('%s: forwarding frame "%s" from interface %d to 1' % (self, fr, i))
-                        else:
-                            fr = LinkFrame('MPLS', m_fr.to_byte_S())
-                            self.intf_L[out_inf].put(fr.to_byte_S(), 'out', True)
-                            print('%s: forwarding frame "%s" from interface %d to 1' % (self, fr, i))
-                else:
-                    fr = LinkFrame('MPLS', m_fr.to_byte_S())
-                    self.intf_L[out_inf].put(fr.to_byte_S(), 'out', True)
-                    print('%s: forwarding frame "%s" from interface %d to 1' % (self, fr, i))
+                            return
+                fr = LinkFrame('MPLS', m_fr.to_byte_S())
+                self.intf_L[out].put(fr.to_byte_S(), 'out', True)
+                print('%s: forwarding frame "%s" from interface %d to 1' % (self, fr, i))
 
     ## process an MPLS frame incoming to this router
     #  @param m_fr: MPLS frame to process

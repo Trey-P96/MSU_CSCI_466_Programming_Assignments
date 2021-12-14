@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1dbadc55-9e1c-424b-b4f3-a226410b3bf9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/network_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MSU_CSCI_466_Programming_Assignments.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MSU_CSCI_466_Programming_Assignments.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/link.py" beforeDir="false" afterPath="$PROJECT_DIR$/link_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rprint.py" beforeDir="false" afterPath="$PROJECT_DIR$/rprint.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/network_1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +61,7 @@
       <workItem from="1639265161708" duration="3753000" />
       <workItem from="1639337647680" duration="1229000" />
       <workItem from="1639338975529" duration="108000" />
-      <workItem from="1639415872007" duration="16959000" />
+      <workItem from="1639415872007" duration="20506000" />
     </task>
     <servers />
   </component>
